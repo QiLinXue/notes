@@ -1,103 +1,12 @@
 \documentclass[letterpaper]{article}
 
-\usepackage[english]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath, amsthm, amssymb, amsfonts}
-\numberwithin{equation}{section}
+\usepackage{./qilinnotes}
 
-% Problem Style
-\newtheoremstyle{classic}%                % Name
-  {}%                                     % Space above
-  {}%                                     % Space below
-  {}%                                     % Body font
-  {}%                                     % Indent amount
-  {\bfseries}%                            % Theorem head font
-  {.}%                                    % Punctuation after theorem head
-  { }%                                    % Space after theorem head, ' ', or \newline
-  {}%                                     % Theorem head spec (can be left empty, meaning `normal')
-\theoremstyle{classic}
-\newtheorem{problem}{Problem}
-
-% Margins
-\usepackage{geometry}
- \geometry{
- total={170mm,257mm},
- left=20mm,
- top=20mm,
- bottom=20mm,
- }
-
-% Header
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-\fancyfoot[LE,RO]{\thepage}
-\rhead{Grade 12 Bio: Biochemistry}
-\lhead{QiLin Xue}
-\title{Biochemistry}
-\author{QiLin Xue}
-\date{ }
-
-% No Indent
-\setlength\parindent{0pt}
-
-% SI Units
-\usepackage{siunitx}
-
-% Boxes
-\usepackage[many]{tcolorbox}
-
-% Images
-\usepackage{graphicx}
-\graphicspath{ {imgs/} }
-
-% Lists
-\usepackage{multicol}
-
-% Links
-\usepackage{hyperref}
-
-% Chem Drawings
-\usepackage{chemfig}
-\usepackage{mhchem}
-
-% Multi Rows
-\usepackage{multirow}
+\newcommand\Class{Grade 12 Bio}
+\newcommand\Unit{Biochemistry}
+\newcommand\Author{QiLin Xue}
 
 \begin{document}
-
-% Custom Boxes
-\newtcolorbox{exampleQ}[0]{
-    colback=red!5!white,
-    colframe=red!75!black,
-    fonttitle=\bfseries,
-    title=Sample Question
-}
-\newtcolorbox{lab}[0]{
-    colback=red!5!white,
-    colframe=red!75!black,
-    colbacktitle=yellow!50!red,
-    coltitle=red!25!black,
-    fonttitle=\bfseries,
-    title=Lab
-}
-
-\newtcolorbox{review}[0]{
-    fonttitle=\bfseries,
-    colback=blue!5!white,
-    colframe=blue!40!black,
-    title=Review
-}
-\newtcolorbox{idea}[0]{
-    breakable,
-    fonttitle=\bfseries,
-    title=Idea
-}
-\newtcolorbox{tip}[0]{
-    breakable,
-    fonttitle=\bfseries,
-    title=Tip
-}
 \maketitle
 
 \tableofcontents
