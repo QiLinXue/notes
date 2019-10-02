@@ -1,106 +1,12 @@
 \documentclass{article}
-\usepackage[x11names]{xcolor}
 
-\usepackage[english]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath, amsthm, amssymb, amsfonts}
-\numberwithin{equation}{section}
+\usepackage{./qilinnotes}
 
-% Problem Style
-\newtheoremstyle{classic}%                % Name
-  {}%                                     % Space above
-  {}%                                     % Space below
-  {}%                                     % Body font
-  {}%                                     % Indent amount
-  {\bfseries}%                            % Theorem head font
-  {.}%                                    % Punctuation after theorem head
-  { }%                                    % Space after theorem head, ' ', or \newline
-  {}%                                     % Theorem head spec (can be left empty, meaning `normal')
-\theoremstyle{classic}
-\newtheorem{problem}{Problem}
-\usepackage{hyperref}
-% Margins
-\usepackage{geometry}
- \geometry{
- a4paper,
- total={170mm,257mm},
- left=20mm,
- top=20mm,
- }
-
-% Header
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-\rhead{Grade 12 Chem: Structure and Bonding}
-\lhead{QiLin Xue}
-\title{Structure and Bonding}
-\author{QiLin Xue}
-\date{ }
-
-% No Indent
-\setlength\parindent{0pt}
-
-% SI Units
-\usepackage{siunitx}
-
-% Boxes
-\usepackage[many]{tcolorbox}
-
-% Images
-\usepackage{graphicx}
-\graphicspath{ {imgs/} }
-
-% Lists
-\usepackage{multicol}
-
-% Links
-\usepackage{tikz} 
-\usepackage{tikzorbital}
-\usepackage{ifthen}
-\usetikzlibrary{fadings,patterns,backgrounds,fit,arrows}
-\pgfdeclarelayer{backbackground}
-\pgfsetlayers{backbackground,background,main}
-% Ref: http://mirrors.ibiblio.org/CTAN/graphics/pgf/contrib/tikzorbital/tikzorbital.pdf
+\newcommand\Class{Grade 12 Chem}
+\newcommand\Unit{Structure and Bonding}
+\newcommand\Author{QiLin Xue}
 
 \begin{document}
-
-% Custom Boxes
-\newtcolorbox{exampleQ}[0]{
-    colback=red!5!white,
-    colframe=red!75!black,
-    fonttitle=\bfseries,
-    title=Sample Question
-}
-\newtcolorbox{exampleS}[0]{
-    colback=red!5!white,
-    colframe=red!75!black,
-    colbacktitle=yellow!50!red,
-    coltitle=red!25!black,
-    fonttitle=\bfseries,
-    title=Sample Solution
-}
-
-\newtcolorbox{theme}[0]{
-    fonttitle=\bfseries,
-    colback=blue!5!white,
-    colframe=blue!40!black,
-    title=Theme
-}
-\newtcolorbox{idea}[0]{
-    fonttitle=\bfseries,
-    colback=blue!5!white,
-    colframe=blue!40!black,
-    breakable,
-    title=Idea
-}
-
-\newtcolorbox{review}[0]{
-    breakable,
-    fonttitle=\bfseries,
-    title=Review
-}
-
 \maketitle
 
 \tableofcontents
