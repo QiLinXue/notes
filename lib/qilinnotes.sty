@@ -1,0 +1,117 @@
+\usepackage[x11names]{xcolor}
+
+% Language
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+% Text
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\numberwithin{equation}{section}
+
+% Problem Style
+\newtheoremstyle{classic}% % Name
+  {}%                      % Space above
+  {}%                      % Space below
+  {}%                      % Body font
+  {}%                      % Indent amount
+  {\bfseries}%             % Theorem head font
+  {.}%                     % Punctuation after theorem head
+  { }%                     % Space after theorem head, ' ', or \newline
+  {}%                      % Theorem head spec (can be left empty, meaning `normal')
+\theoremstyle{classic}
+\newtheorem{problem}{Problem}
+\usepackage{hyperref}
+
+% Formatting
+% Margins
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  total={170mm,257mm},
+  left=20mm,
+  top=20mm,
+}
+\setlength\parindent{0pt} % No Indent
+% Header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\Class: \Unit}
+\lhead{\Author}
+\title{\Unit}
+\author{\Author}
+\date{\today}
+
+% SI Units
+\usepackage{siunitx}
+
+% Boxes
+\usepackage[many]{tcolorbox}
+
+% Graphics + Images
+\usepackage{graphicx}
+\graphicspath{ {imgs/} }
+% Tikz
+\usepackage{tikz}
+\usetikzlibrary{fadings,patterns,backgrounds,fit,arrows}
+\pgfdeclarelayer{backbackground}
+\pgfsetlayers{backbackground,background,main}
+% Chemistry
+\usepackage{tikzorbital}
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+
+% Lists
+\usepackage{multicol}
+\usepackage{multirow}
+
+% Logic
+\usepackage{ifthen}
+
+% Custom Boxes
+\newtcolorbox{exampleQ}[0]{
+  colback=red!5!white,
+  colframe=red!75!black,
+  fonttitle=\bfseries,
+  title=Sample Question
+}
+\newtcolorbox{exampleS}[0]{
+    colback=red!5!white,
+    colframe=red!75!black,
+    colbacktitle=yellow!50!red,
+    coltitle=red!25!black,
+    fonttitle=\bfseries,
+    title=Sample Solution
+}
+
+\newtcolorbox{theme}[0]{
+    fonttitle=\bfseries,
+    colback=blue!5!white,
+    colframe=blue!40!black,
+    title=Theme
+}
+\newtcolorbox{review}[0]{
+  fonttitle=\bfseries,
+  colback=blue!5!white,
+  colframe=blue!40!black,
+  title=Review
+}
+\newtcolorbox{idea}[0]{
+  breakable,
+  fonttitle=\bfseries,
+  title=Idea
+}
+\newtcolorbox{tip}[0]{
+  breakable,
+  fonttitle=\bfseries,
+  title=Tip
+}
+
+\newtcolorbox{lab}[0]{
+  colback=red!5!white,
+  colframe=red!75!black,
+  colbacktitle=yellow!50!red,
+  coltitle=red!25!black,
+  fonttitle=\bfseries,
+  title=Lab
+}
